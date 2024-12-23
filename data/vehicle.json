@@ -1,0 +1,30 @@
+[
+    {
+        "license_plate": "NY20 Z5678",
+        "make": "BMW",
+        "model": "X5",
+        "color": "Black",
+        "status": "Abandoned near Times Square"
+    },
+    {
+        "license_plate": "NJ11 G1234",
+        "make": "Ford",
+        "model": "F-150",
+        "color": "White",
+        "status": "Stopped near George Washington Bridge"
+    },
+    {
+        "license_plate": "PA44 T9999",
+        "make": "Honda",
+        "model": "Accord",
+        "color": "Red",
+        "status": "Abandoned in Philadelphia"
+    },
+    {
+        "license_plate": "NY33 M1234",
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "color": "Yellow",
+        "status": "Seized during the operation"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "email": "mark.robinson@hotmail.com",
+        "type": "Suspect",
+        "note": "Email traced to the car theft ring planning"
+    },
+    {
+        "email": "sarah.miller@fastmail.com",
+        "type": "Suspect",
+        "note": "Used to communicate with accomplices"
+    },
+    {
+        "email": "report@police.gov",
+        "type": "Authority",
+        "note": "Received anonymous tips about the operation"
+    },
+    {
+        "email": "tips@stolencars.org",
+        "type": "Authority",
+        "note": "Used for public tips about stolen cars"
+    }
+]

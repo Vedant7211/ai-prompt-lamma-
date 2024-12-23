@@ -1,0 +1,57 @@
+[
+    {
+        "number": "+1-555-234-5678",
+        "type": "Witness",
+        "note":""
+    },
+    {
+        "number": "+1-555-876-5432",
+        "type": "Witness",
+        "note":""
+    },
+    {
+        "number": "+1-555-111-2222",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-333-6666",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-777-8888",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-444-5555",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-800-123-4567",
+        "type": "Fraudulent",
+        "note":""
+    },
+    {
+        "number": "+1-555-222-3333",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-444-5555",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-888-9999",
+        "type": "Suspect",
+        "note":""
+    },
+    {
+        "number": "+1-555-666-7777",
+        "type": "Suspect",
+        "note":""
+    }
+]

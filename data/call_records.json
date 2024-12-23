@@ -1,0 +1,37 @@
+[
+    {
+        "caller": "+1-555-111-2222",
+        "receiver": "+1-555-333-6666",
+        "date_time": "2024-12-01 23:45:00",
+        "duration": "45 seconds",
+        "notes": "Discussed a planned ambush near 5th Street"
+    },
+    {
+        "caller": "+1-555-777-8888",
+        "receiver": "+1-555-444-5555",
+        "date_time": "2024-12-02 02:15:00",
+        "duration": "10 seconds",
+        "notes": "Relay orders to move weapons to a new location"
+    },
+    {
+        "caller": "+1-555-999-0000",
+        "receiver": "+1-555-111-2222",
+        "date_time": "2024-12-02 04:00:00",
+        "duration": "1 minute 30 seconds",
+        "notes": "Confirmed safe delivery of supplies"
+    },
+    {
+        "caller": "+1-555-333-6666",
+        "receiver": "+1-555-777-8888",
+        "date_time": "2024-12-03 19:30:00",
+        "duration": "2 minutes 20 seconds",
+        "notes": "Urgent instructions for regrouping after police intervention"
+    },
+    {
+        "caller": "+1-555-444-5555",
+        "receiver": "+1-555-999-0000",
+        "date_time": "2024-12-03 23:59:00",
+        "duration": "15 seconds",
+        "notes": "Codeword confirmation for meeting"
+    }
+]
