@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Visualization</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.2/cytoscape.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #cy {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid #ccc;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cy"></div>
+  <div id="error-message" class="error" style="display: none;"></div>
+  
+  <script>
+    // Fetch graph data from the backend
+    fetch('http://127.0.0.1:3000/graph-data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    const cy = cytoscape({
+      container: document.getElementById('cy'),
+      elements: [...data.nodes, ...data.edges], // Combine nodes and edges
+      style: [
+        {
+          selector: 'node',
+          style: {
+            'background-color': '#0074D9',
+            'color': '#fff',
+            'text-valign': 'center',
+            'label': 'data(label)',
+            'font-size': '12px',
+          },
+        },
+        {
+          selector: 'edge',
+          style: {
+            'width': 2,
+            'line-color': '#000000',
+            'target-arrow-color': '#000000',
+            'target-arrow-shape': 'triangle',
+            'curve-style': 'bezier',
+            'label': 'data(label)',
+            'font-size': '10px',
+          },
+        },
+      ],
+      layout: {
+        name: 'cose',
+        animate: true,
+      },
+    });
+  })
+  .catch(err => {
+    console.error('Error fetching graph data:', err);
+    const errorMessage = document.getElementById('error-message');  
+    errorMessage.style.display = 'block';
+    errorMessage.textContent = 'Failed to load graph data. Please try again later.';
+  });
+
+ 
+  
+  </script>
+</body>
+</html>
